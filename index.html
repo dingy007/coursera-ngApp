@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="myFirstApp">
 <head>
 	<meta charset="utf-8">
-	<title>Hello Coursera</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<title>Angular App</title>
 </head>
 <body>
-	<h1>Hello Courseraa</h1>
+	<h1>Name Calculator</h1>
+	<div data-ng-controller="MyFirstController">
+		My name is: <input type="text" data-ng-model="name">
+		<br>
+		{{sayHello()}}
+		<br>
+
+	</div>
 	browser-sync start --server --directory --files "**/*"
 </body>
 </html>
